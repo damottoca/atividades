@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class atividade03 {
+
+    public class Main {
+        public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
+            int numero = lerNumero(scanner);
+            int soma = calcularSoma(numero);
+            exibirResultado(numero, soma);
+        }
+
+        private static int lerNumero(Scanner scanner) {
+            System.out.print("Digite um número: ");
+            return scanner.nextInt();
+        }
+
+        private static int calcularSoma(int numero) {
+            int soma = 0;
+            for (int i = 1; i <= numero; i++) {
+                soma += i;
+            }
+            return soma;
+        }
+
+        private static void exibirResultado(int numero, int soma) {
+            System.out.println("A soma dos números de 1 a " + numero + " é: " + soma);
+        }
+    }
+
+}
