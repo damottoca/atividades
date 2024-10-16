@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+    public class Main {
+
+        public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
+
+            int num1 = lerNumero(scanner, "Digite o primeiro número: ");
+            int num2 = lerNumero(scanner, "Digite o segundo número: ");
+            int soma = somar(num1, num2);
+
+            System.out.println("A soma é: " + soma);
+        }
+
+        private static int lerNumero(Scanner scanner, String mensagem) {
+            System.out.print(mensagem);
+            return scanner.nextInt();
+        }
+
+        private static int somar(int a, int b) {
+            return a + b;
+        }
+    }
+
+}
